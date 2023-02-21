@@ -1,0 +1,224 @@
+
+
+.bg-dark {
+    background-color: #2f2e2e !important;
+}
+
+.main .carousel-item{
+  box-shadow: 3px 10px 2px #474747; 
+}
+main h1{
+  position: relative;
+  }
+  
+  main h1::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    background: rgb(255,165,0);
+    background: linear-gradient(180deg, rgba(255,165,0,1) 0%, rgba(255,175,27,0.9752275910364145) 90%);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+  }
+  
+  main .banner-left img, main .banner-right img{
+   width: 100%;
+   background-size: contain; 
+  }
+  
+  
+  footer{
+    min-height: 50px;
+  }
+
+  .strip img{
+    border-radius: 14%;
+  }
+  .strip button {
+    border-radius: 20%;
+    background-color: #004d0d;
+    
+
+  }
+ 
+  
+  .funders .box_zoom-img{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  
+  .funders .box_zoom-img img{
+    width: 100%;
+    transition: all 0.8s ease-in-out;
+  }
+  
+  .funders .box_zoom-img:hover img{
+    transform: scale(1.1);
+  }
+  
+  .funders .description{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white; 
+  }
+  
+  .funders .description h3{
+    text-shadow: 1px 1px 2px black;
+  }
+  .funders .description h4{
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  @media screen and (max-width:767px){
+    main .main-carousel-sm-img{
+      position: relative;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 70vh;
+      background-image: url("/images/17.jpg");
+    }
+    main h5{
+      text-shadow: 3px 5px 2px #474747; 
+    }
+  
+    main .banner-left{
+      margin-bottom: 32px;
+    } 
+    
+    main .banner-right{
+      margin-top: 32px;
+     }
+  
+  }
+  
+
+* {
+    box-sizing: border-box;
+  }
+  .h1 {
+    font-size: 2.5 rem;
+    margin-bottom: 0.5rem;
+    font-size: 500;
+    line-height: 1.2;
+  }
+  body{
+      background-color: #885800
+  }
+  
+  header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    box-shadow: 0px 10px 22px 0px #000000;
+    background-color: #004d0d;
+    
+  
+  }
+  
+  
+  
+  header nav .links {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header nav .links a {
+    color: azure;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 10px;
+    transition-duration: 800ms;
+  }
+  footer{
+    background: #004d0d;
+  
+  }
+
+  
+  .carousel-item {
+    height: 800px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
+  header nav .links a:hover {
+    /* background: rgb(165, 93, 0); */
+    color: rgb(165, 93, 0);
+    transform: scale(1.05);
+  }
+  
+  header nav .burger {
+    display: none;
+  }
+  .youtube i:hover {
+    transform: scale(1.5);
+  }
+  .instagram i:hover {
+    transform: scale(1.5);
+  }
+  .facebook i:hover {
+    transform: scale(1.5);
+  }
+
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    header nav .links {
+        width: 60%;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    header nav {
+        max-width: 100% !important;
+    }
+    header nav .links {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background: #2f2e2e;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        text-align: center;
+    }
+    header nav .links a {
+        padding: 14px 0;
+        border-radius: 0;
+        border-top: 1px solid azure;
+    }
+    header nav .links a:hover {
+        transform: scale(1.2);
+    }
+    header nav .burger {
+        display: block;
+        color: azure;
+        font-size: 30px;
+    }
+}

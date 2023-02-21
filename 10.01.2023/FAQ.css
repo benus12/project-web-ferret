@@ -1,0 +1,151 @@
+
+
+.bg-dark {
+    background-color: #2f2e2e !important;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  .h1 {
+    font-size: 2.5 rem;
+    margin-bottom: 0.5rem;
+    font-size: 500;
+    line-height: 1.2;
+  }
+  body{
+      background-image: url(/images/17.jpg);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: 100% 100%;
+      
+  }
+  
+  header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    box-shadow: 0px 10px 22px 0px #000000;
+    background-color: #004d0d;
+    
+  
+  }
+  
+ .accordion {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 70%; 
+    
+ }
+ 
+
+
+ main .accordion-body{
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 80%; 
+    
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    
+ }
+ main .accordion-button {
+   background-color:rgb(165, 93, 0);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
+   
+ }
+ main .container{
+    margin-bottom: 145px;
+    
+ }
+
+ 
+  
+  
+  
+  header nav .links {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header nav .links a {
+    color: azure;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 10px;
+    transition-duration: 800ms;
+  }
+  footer  {
+    background: #004d0d;
+    
+  
+  }
+
+  header nav .links a:hover {
+    /* background: rgb(165, 93, 0); */
+    color: rgb(165, 93, 0);
+    transform: scale(1.05);
+  }
+  
+  header nav .burger {
+    display: none;
+  }
+  .youtube i:hover {
+    transform: scale(1.5);
+  }
+  .instagram i:hover {
+    transform: scale(1.5);
+  }
+  .facebook i:hover {
+    transform: scale(1.5);
+  }
+
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    header nav .links {
+        width: 60%;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    header nav {
+        max-width: 100% !important;
+    }
+    header nav .links {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background: #2f2e2e;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        text-align: center;
+    }
+    header nav .links a {
+        padding: 14px 0;
+        border-radius: 0;
+        border-top: 1px solid azure;
+    }
+    header nav .links a:hover {
+        transform: scale(1.2);
+    }
+    header nav .burger {
+        display: block;
+        color: azure;
+        font-size: 30px;
+    }
+}
